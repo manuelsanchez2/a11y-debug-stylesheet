@@ -211,10 +211,6 @@
      Mark buttons that have only an <svg> and no accessible label via text or aria-label.
     */
 
-    button {
-        margin-block: 2rem;
-    }
-
     button:has(svg):not(:has(span)):not([aria-label]) {
         outline: 2px dashed var(--color-debug-warning);
         outline-offset: 4px;
