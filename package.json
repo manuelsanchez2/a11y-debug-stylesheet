@@ -1,6 +1,6 @@
 {
   "name": "a11y-debug.css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CSS-only accessibility debugger for HTML. Highlights common a11y issues visually.",
   "main": "a11y-debug.css",
   "style": "a11y-debug.css",
@@ -18,5 +18,5 @@
   "bugs": {
     "url": "https://github.com/manuelsanchez2/a11y-debug-stylesheet/issues"
   },
-  "homepage": "https://cssday-2025.manuelsanchezdev.com"
+  "homepage": "https://manuelsanchez2.github.io/a11y-debug-stylesheet/"
 }
