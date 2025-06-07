@@ -8,10 +8,12 @@
     <meta name="description" content="a11y-debug.css is a CSS-only accessibility debugger that highlights common accessibility issues visually using pure CSS. No JavaScript, no build step, just drop it in." />
     <meta name="keywords" content="a11y, accessibility, css, debugger, styles, web development" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <link rel="stylesheet" href="a11y-debug.css"> -->
     <!-- <link rel="stylesheet" href="https://manuelsanchez2.github.io/a11y-debug-stylesheet/a11y-debug.css" /> -->
   </head>
-  <body class="flex items-center justify-center min-h-screen px-4 py-12">
+  <body class="flex items-center justify-center min-h-screen px-4 py-12 a11y-debug">
     <main class="w-full max-w-md rounded-xl shadow-xl bg-white p-6 text-center">
+
       <h1 class="text-2xl font-bold mb-2">a11y-debug.css</h1>
       <p class="text-lg font-semibold mb-2">A CSS-only Accessibility Debugger</p>
       <p class="text-gray-600 mb-6">
@@ -19,13 +21,15 @@
         no JavaScript, no build step, just drop it in.
       </p>
 
-      <a
-        href="https://raw.githubusercontent.com/manuelsanchez2/a11y-debug-stylesheet/main/a11y-debug.css"
-        class="bg-blue-500 text-white font-semibold px-5 py-2 rounded hover:bg-blue-600 transition"
-        download
-      >
-        Download v1.0.2
-      </a>
+      <div class="flex justify-center items-center">
+        <a
+          href="https://raw.githubusercontent.com/manuelsanchez2/a11y-debug-stylesheet/main/a11y-debug.css"
+          class="bg-blue-500 text-white font-semibold px-5 py-2 rounded hover:bg-blue-600 transition"
+          download
+        >
+          Download v1.1.0
+        </a>
+      </div>
 
       <div class="mt-4">
         <code class="bg-gray-200 px-2 py-1 rounded text-sm text-red-700 border border-black">npm i a11y-debug.css</code>

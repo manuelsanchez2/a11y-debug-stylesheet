@@ -14,9 +14,14 @@
     --color-debug-dark-rgb: 18, 18, 18;
     --color-debug-light: #ffffff;
 
-    --color-debug-warning: darkorange;
-    --color-debug-light-error: oklch(88.5% 0.062 18.334);
-    --color-debug-error: crimson;
+    --color-debug-info: oklch(0.709 0.112 274.8);
+    --color-debug-light-info: oklch(0.925 0.062 274.8);
+
+    --color-debug-warning: oklch(0.823 0.194 64.0);
+    --color-debug-light-warning: oklch(0.925 0.062 64.0);
+
+    --color-debug-error: oklch(0.603 0.183 25.3);
+    --color-debug-light-error: oklch(0.885 0.062 18.334);
 }
 
 /* ==========================================================================
@@ -208,16 +213,15 @@
     /* --------------------------------------------------------------------------
      Icon-Only Buttons Without aria-label
      --------------------------------------------------------------------------
-     Mark buttons that have only an <svg> and no accessible label via text or aria-label.
+     Mark buttons that have only an <svg> and no accessible label via text, aria-label, aria-labelledby or title.
     */
-
-    button:has(svg):not(:has(span)):not([aria-label]) {
+    button:has(svg:only-child):not([aria-label]):not([title]):not(:has([aria-labelledby])) {
         outline: 2px dashed var(--color-debug-warning);
         outline-offset: 4px;
         position: relative;
     }
 
-    button:has(svg):not(:has(span)):not([aria-label])::after {
+    button:has(svg:only-child):not([aria-label]):not([title]):not(:has([aria-labelledby]))::after {
         content: "⚠️ Icon-only button needs a label";
         color: var(--color-debug-error);
         font-size: 0.675rem;
