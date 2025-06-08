@@ -9,9 +9,8 @@ const $trackingButton = document.querySelector('[data-btn="download"]')
  * @type {Object}
  */
 const eventClickData = {
-  eventName: 'button_click',
+  eventType: 'click',
   eventId: 'btn-download',
-  projectId: 'a11y-debug-css',
   projectName: 'A11y Debug CSS',
 }
 
@@ -20,9 +19,8 @@ const eventClickData = {
  * @type {Object}
  */
 const eventViewData = {
-  eventName: 'page_view',
+  eventType: 'view',
   eventId: 'page-view',
-  projectId: 'a11y-debug-css',
   projectName: 'A11y Debug CSS',
 }
 
